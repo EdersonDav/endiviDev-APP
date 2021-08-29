@@ -8,16 +8,17 @@ interface TypeProps {
 }
 
 export const Container = styled.View`
-  background-color: ${({ type }: TypeProps) =>
+   background-color: ${({ type }: TypeProps) =>
     type === 'income' ?
       colors.greenLight :
       colors.redLight
   };
+  height: 100%;
+  width: 100%;
   align-items: center;
   padding: 10px;
-  width: ${RFValue(130)}px;
-  height: ${RFValue(100)}px;
-  border-radius: 11px;
+  border-radius: 15;
+
 `
 
 export const Header = styled.View`

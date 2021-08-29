@@ -1,6 +1,8 @@
 import styled from "styled-components/native";
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
+import { Feather } from '@expo/vector-icons';
+
 import { colors } from '../../global/styles/style';
-import { RFPercentage } from 'react-native-responsive-fontsize';
 
 
 export const Container = styled.View`
@@ -21,4 +23,16 @@ export const Header = styled.View`
 export const Body = styled.View`
   width: 100%;
   padding: 0px 10px;
+`
+
+export const ViewControlsHeader = styled.View`
+  height: ${RFValue(100)};
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+`
+
+export const Icon = styled(Feather)`
+  font-size: ${RFValue(30)}px;
+  color: ${colors.textColor}
 `
