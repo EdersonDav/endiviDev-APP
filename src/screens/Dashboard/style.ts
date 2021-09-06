@@ -26,13 +26,14 @@ export const Body = styled.View`
 `
 
 export const ViewControlsHeader = styled.View`
-  height: ${RFValue(100)};
+  height: ${RFValue(100)}px;
   flex-direction: column;
-  justify-content: center;
-  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 `
 
-export const Icon = styled(Feather)`
+export const Eye = styled(Feather)`
   font-size: ${RFValue(30)}px;
-  color: ${colors.textColor}
+  color: ${colors.textColor};
 `

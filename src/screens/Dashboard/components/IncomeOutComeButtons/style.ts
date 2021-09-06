@@ -17,7 +17,7 @@ export const Container = styled.View`
   width: 100%;
   align-items: center;
   padding: 10px;
-  border-radius: 15;
+  border-radius: 15px;
 
 `
 
